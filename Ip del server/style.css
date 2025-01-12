@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+/* ajustes pa q no se haga el desapapaye */
+.section {
+    height: 50vh; /* porcentaje de pantalla que abarque cada seccion */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    flex-direction: column; /* que se alinien en columna vaya */
+}
+
+.section1 {
+    background-image: url('/img/2025-01-04_18.50.26.png'); /* c foto */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.section2 {
+    background-image: url('/img/pip.png'); /* c foto */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.section2 img{
+    margin-top: 30px;
+    border-radius: 10%;
+    width: 5%;
+    box-shadow: 0px 0px 30px #000;
+}
+
+/* titulo de las secciones */
+.section h1 {
+    font-family: 'MiFuente';
+    font-size: 5em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.section h2 {
+    font-size: 1.5em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-family: monospace;
+}
+
+/* botones */
+.section2 .button-container {
+    display: flex;
+    gap: 90px; /* espacio entre lo botone */
+    flex-wrap: wrap; /* que se ajusten aca papu */
+}
+
+/* estilo delo botone (no cambia el estilo general) */
+.section2 button {
+    font-family: 'MiFuente';
+    padding: 20px 40px; /* Ajustado para pipis chiquitos */
+    font-size: 1.5em;
+    border: none;
+    border-radius: 30px;
+    background-color: #06072b65;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.section2 button:hover {
+    background-color: #12184742;
+}
+
+.fade-between {
+    height: 5px; /* Ajusta la linea  */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%);
+    width: 100%;
+}
+
+@font-face {
+    font-family: 'MiFuente';
+    src: url('/fonts/Minecrafter.Alt.ttf') format('woff2'),
+         url('fonts/miFuente.woff') format('woff'),
+         url('fonts/miFuente.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* responsive (segun) */
+
+/* celular */
+@media (max-width: 768px) {
+    .section {
+        height: auto; /* que las seccione se adapten asi de que jarvis adaptate */
+        padding: 20px;
+        display: flex;
+    }
+
+    .section h1 {
+        font-size: 3em; /* reductor de pene o del titulo tambien */
+    }
+
+    .section2 .button-container {
+        flex-direction: column; /* que los botones se hagan pa rriba */
+        gap: 20px;
+    }
+
+    .section2 button {
+        font-size: 1.2em; /* botonn */
+        padding: 15px 30px;
+    }
+}
+
+/* para tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .section h1 {
+        font-size: 4em; /* titulo ajustable*/
+    }
+
+    .section2 .button-container {
+        gap: 50px; 
+    }
+
+    .section2 button {
+        font-size: 1.8em; /* botone ajustable  */
+        padding: 20px 40px;
+    }
+}
+
+.logo img{
+   width: 20%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.player {
+    gap: 50px;
+}
